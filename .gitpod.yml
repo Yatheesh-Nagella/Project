@@ -1,0 +1,17 @@
+tasks:
+  - name: postgres
+    init: |
+      image: marcopeg/gitpod-workspace-postgres:2.5.0
+  - name: django
+    before: |
+      pip install django
+
+vscode:
+  extensions:
+    - cweijan.vscode-postgresql-client2
+
+ports:
+  - port: 8000
+    onOpen: ignore
+  - port: 5432
+    onOpen: ignore
