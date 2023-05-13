@@ -3,6 +3,7 @@
 - cohort: MAY - 2023
 
 ## Tech stack used
+- HTML
 - Python [django]
 - Postgres [DB]
 - Shell 
